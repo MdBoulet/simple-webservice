@@ -67,6 +67,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>simple-webservice</finalName>
 	</build>
 
 </project>
