@@ -1,3 +1,4 @@
+/*
 package gn.boulet.simplewebservice.dto;
 
 import gn.boulet.simplewebservice.model.Item;
@@ -16,3 +17,4 @@ public class ItemDto {
         return itemDto;
     }
 }
+*/

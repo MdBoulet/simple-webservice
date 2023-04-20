@@ -1,3 +1,4 @@
+/*
 package gn.boulet.simplewebservice.model;
 
 import gn.boulet.simplewebservice.dto.CartDto;
@@ -43,3 +44,4 @@ public class Cart {
                 .build();
     }
 }
+*/

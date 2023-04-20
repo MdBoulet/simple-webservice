@@ -1,9 +1,9 @@
 package gn.boulet.simplewebservice.controller;
 
-import gn.boulet.simplewebservice.dto.CartDto;
-import gn.boulet.simplewebservice.model.Cart;
-import gn.boulet.simplewebservice.model.Item;
-import gn.boulet.simplewebservice.service.CartService;
+//import gn.boulet.simplewebservice.dto.CartDto;
+//import gn.boulet.simplewebservice.model.Cart;
+//import gn.boulet.simplewebservice.model.Item;
+//import gn.boulet.simplewebservice.service.CartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,35 +13,40 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/carts")
+@RequestMapping("/")
 public class CartController {
 
-    @Autowired
-    private CartService cartService;
+    @GetMapping
+    public String sayHello() {
+        return "Hello world";
+    }
 
-    @PostMapping
+    //@Autowired
+    //private CartService cartService;
+
+    /*@PostMapping
     public ResponseEntity<CartDto> addCart(@RequestBody CartDto cartDto) {
         Cart cart = cartService.addCart(Cart.from(cartDto));
 
         return new ResponseEntity<>(CartDto.from(cart), HttpStatus.OK);
-    }
+    }*/
 
-    @GetMapping
+    /*@GetMapping
     public ResponseEntity<List<CartDto>> getCarts() {
         List<Cart> carts = cartService.getCarts();
         List<CartDto> cartDtos = carts.stream().map(CartDto::from).collect(Collectors.toList());
 
         return new ResponseEntity<>(cartDtos, HttpStatus.OK);
-    }
+    }*/
 
-    @GetMapping("{id}")
+    /*@GetMapping("{id}")
     public ResponseEntity<CartDto> getCart(@PathVariable Long id) {
         Cart cart = cartService.getCart(id);
 
         return new ResponseEntity<>(CartDto.from(cart), HttpStatus.OK);
-    }
+    }*/
 
-    @DeleteMapping("{id}")
+    /*@DeleteMapping("{id}")
     public ResponseEntity<CartDto> deleteCart(@PathVariable Long id) {
         Cart cart = cartService.deleteCart(id);
 
@@ -67,5 +72,5 @@ public class CartController {
         Cart cart = cartService.removeItemToCart(cartId, itemId);
 
         return new ResponseEntity<>(CartDto.from(cart), HttpStatus.OK);
-    }
+    }*/
 }

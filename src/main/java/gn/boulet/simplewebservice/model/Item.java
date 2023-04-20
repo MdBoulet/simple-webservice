@@ -1,3 +1,4 @@
+/*
 package gn.boulet.simplewebservice.model;
 
 import gn.boulet.simplewebservice.dto.ItemDto;
@@ -29,3 +30,4 @@ public class Item {
                 .build();
     }
 }
+*/

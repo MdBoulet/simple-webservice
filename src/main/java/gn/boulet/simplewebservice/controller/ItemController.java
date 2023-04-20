@@ -1,3 +1,4 @@
+/*
 package gn.boulet.simplewebservice.controller;
 
 import gn.boulet.simplewebservice.dto.ItemDto;
@@ -55,3 +56,4 @@ public class ItemController {
         return new ResponseEntity<>(ItemDto.from(editItem), HttpStatus.OK);
     }
 }
+*/
